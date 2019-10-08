@@ -1,40 +1,28 @@
-function check() {
-  let email = checkEmail(document.getElementsByClassName("username").value);
-  let pas=checkpas(document.getElementsByClassName("password").value);
-  let numShoe=numCheck(document.getElementsByClassName("shoe").value);
-  let numCloth=numCheck(document.getElementsByClassName("cloth").value);
-  let numHat=numCheck(document.getElementsByClassName("hat")).value);
-  let shipping=checkBox(getshipping());
+function formChecker() {
+  let email = document.getElementsByClassName("username").value;
+  let pas=document.getElementsByClassName("password").value;
+  let numShoe=document.getElementsByClassName("shoe").value;
+  let numCloth=document.getElementsByClassName("cloth").value;
+  let numHat=document.getElementsByClassName("hat").value;
+  let shipping=document.getElementsByClassName("shipping").checked;
 
-  if(email&&pas&&numShoe&&numCloth&&numHat&&shipping){
-    return true;
-  }
-  else{
-    return false;
-  }
-
-}
-
-function checkNum(number){
-  if(number>=0){
-    return true;
-  }
-  else{
+  if(numShoe<0 || numCloth<0 || numHat<0){
     alert("The quantity of that item should greater than 0");
     return false;
   }
-}
-
-function checkShip(){
-  let count=0;
-  let method=document.getElementsByClassName("shipping");
-  for(let i=0;i<method.length;i++){
-    if(method[i].checked){
-      count=method[i].value;
-      break;
-    }
+  if(shipping==false){
+    alert("You have to choose a shipping method");
+    return false;
   }
-  return count;
+  if(pas==null){
+    alert("Password not long enough");
+    return false;
+  }
+  if(!email.include("@")){
+    alert("Email format is not correct");
+    return false;
+  }
+else{
+  return true;
 }
-
-function check
+}

@@ -1,14 +1,14 @@
 <?php
-echo "<link rel='stylesheet' type='text/css' href='style.css' />";
-$user=$_POST['username'];
-$pas=$_POST['password'];
-$shoe=$_POST['shoenum'];
+echo "<link rel='stylesheet' type='text/css' href='style.css'></head>";
+$user=$_POST["username"];
+$pas=$_POST["password"];
+$shoe=$_POST["numShoe"];
 $shoep=$shoe*550;
-$cloth=$_POST['clothnum'];
+$cloth=$_POST["numCloth"];
 $clothp=$cloth*120;
-$hat=$_POST['hatnum'];
+$hat=$_POST["numHat"];
 $hatp=$hat*55;
-$ship=$_POST['shipping'];
+$ship=$_POST["shipping"];
 $shipp=0;
 if ($ship == "Free 7 Day")
 {
@@ -33,6 +33,6 @@ echo "<tr><th>Nike LD Waffle Sacai</th><td>$shoe</td><td>$550</td><td>$$shoep</t
 echo "<tr><th>KAWS x Uniqlo Gone Tee</th><td>$cloth/td><td>$120</td><td>$$clothp</td></tr>";
 echo "<tr><th>Polo Ralph Lauren Indigo Stadium Cap</th><td>$hat</td><td>$55</td><td>$$hatp</td></tr>";
 echo "<tr><th>Shipping</th><td colspan=\"2\">$ship</td><td>$$shipp</td></tr>";
-echo "<tr><th colspan=\"3\">Total Cost</th><th>$$totalCost</th></tr>";
-echo "</table">;
+echo "<tr><th>colspan=\"3\">Total Cost</th><th>$$total</th></tr>";
+echo "</table>";
  ?>

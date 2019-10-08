@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    Outfit Shopping Mall
+  <head><h2>Outfit Shopping Mall</h2>
+
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="formChecker.js"></script>
-    <title></title>
+    <title>Outfit Shopping Mall</title>
   </head>
-  <body onload="document.form1.reset();">
-
+  <body>
+<form onsubmit="return formChecker()" action="customerBackend.php" method="post">
+  <b><h1>Username: </b><input type="email" name="username" required></h1><br>
+  <b><h1>Password: </b><input type="password" name="password" required></h1><br>
+  <b><h1>Following items are on sale:</h1></b><br>
+  <b><h1>Nike LD Waffle Sacai $550 Quantity:</b><input type="number" name="shoe"required></h1><br>
+  <b><h1>KAWS x Uniqlo Gone Tee $120 Quantity:</b><input type="number" name="cloth"required></h1><br>
+  <b><h1>Polo Ralph Lauren Indigo Stadium Cap $55 Quantity:</b><input type="number" name="hat"required></h1><br>
+  <b><h1>Shipping Method:</b>
+  <br>
+<h3><input type="radio" name="shipping" value="0">Free 7 day </h3><br>
+<h3><input type="radio" name="shipping" value="50">$50.00 Over night </h3><br>
+<h3><input type="radio" name="shipping" value="5">$5.00 Three day</h3><br>
+<button type="submit" name="button">Submit order</button>
+</form>
   </body>
 </html>

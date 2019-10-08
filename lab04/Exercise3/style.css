@@ -1,0 +1,25 @@
+body{
+  background-color: white;
+  background-image: url(shoppingmall.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  backface-visibility: hidden;
+
+}
+h1{
+  font-size: 5;
+  font-style: oblique;
+  color: white;
+}
+h2{
+font-size: 60;
+color: black;
+font-style: italic;
+font-display: auto;
+text-align: center;
+}
+h3{
+  font-family: cursive;
+  font-style: italic;
+  font-size: 4;
+}
