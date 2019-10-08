@@ -14,10 +14,7 @@ function formChecker() {
     alert("You have to choose a shipping method");
     return false;
   }
-  if(pas==null){
-    alert("Password not long enough");
-    return false;
-  }
+
   if(!email.include("@")){
     alert("Email format is not correct");
     return false;

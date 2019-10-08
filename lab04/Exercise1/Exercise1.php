@@ -1,6 +1,4 @@
 <?php
-function run()
-{
 	echo "<table>";
 			echo "<tr>";
 	for ($i = 0; $i <= 100; $i++) {
@@ -9,17 +7,16 @@ function run()
 			if ($i == 0 && $j == 0) {
 				echo "<td> </td>";
 			} else if ($i == 0) {
-				echo "<th>" . $j . "</th>";
+				echo "<td>" .$j. "</td>";
 			} else if ($j == 0) {
-				echo "<th>" . $i . "</th>";
-			}
+				echo "<td>" .$i. "</td>";
+			}else{
 			$k = $i * $j;
-			echo "<td>$k</td>";
+			echo "<td>$k</td>";}
 		}
 		echo "</tr>";
 	}
 
 	echo "</table>";
-}
-	run();
+
 ?>
