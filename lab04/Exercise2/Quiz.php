@@ -41,7 +41,7 @@ echo "Question 5: Which English queen has the same name as a type of plum?<br>";
 echo "You answered: $answer5<br>";
 echo "Correct answer: Victoria<br><br>";
 $score=($count/5)*100;
- echo "You answered $count correctly answers <br>";
- echo "Your Score: $score<br><br>";
+ echo "You have $count correct answers <br>";
+ echo "Your Score: $score%<br><br>";
 
 ?>
