@@ -14,7 +14,7 @@ function run()
 				echo "<th>" . $i . "</th>";
 			}
 			$k = $i * $j;
-			echo "<td>$k</td> \n";
+			echo "<td>$k</td>";
 		}
 		echo "</tr>";
 	}
